@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!--Required meta tags-->
+    <!--required meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,84 +13,96 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Option 1: Include in HTML -->
+    <!-- option 1: include in html -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
+<!--main container to divide body to two col, sidebar and main 4 col 8 col-->
 
-<body class=" bg-light container-fluid ">
+<body class=" container-fluid ">
 
     <div class=" row">
-
+        <!--sidebar here-->
+        <!--bg color black -->
         <header class=" bg-dark header col col-4 col-sm-4 col-md-4 col-lg-3 ">
-            <ul class="row row-cols-1 p-3 ">
-                <nav class=" lg-p-16 p-3 col text-white"><i class=" p-3 col bi bi-circle-half"></i><strong>Dashboard
+            <nav class="row row-cols-1  ">
+                <!--bg color black, text color white -->
+                <a class="p-5 text-decoration-none lg-p-16  col text-white"><i class=" p-3 col bi bi-circle-half"></i><strong>Dashboard
                         Kit</strong>
-                </nav>
+                </a>
+                
+            
+                <a class="text-decoration-none text-white bg-secondary p-4 col-12 "> <i class="p-3   col bi bi-pie-chart-fill"></i>Overview</a>
+                    
+                <a class="text-decoration-none  hover p-4 text-secondary col"> <i class=" p-3 col bi bi-card-text"></i>Ticket</a>
+                <a class="text-decoration-none hover p-4 text-secondary col"><i class=" p-3 col bi bi-lightbulb-fill"></i>Ideas</a>
+                <a class="text-decoration-none hover p-4 text-secondary col"><i class=" p-3 col bi bi-people-fill"></i>Contacts</a>
+                <a class="text-decoration-none hover p-4 text-secondary col"><i class=" p-3 col bi bi-person-square"></i>Agents</a>
+                <a class="text-decoration-none hover p-4 text-secondary col"><i class=" p-3 col bi bi-journal-text"></i>Articles</a>
+               
+            
 
-            </ul>
-            <ul class=" row row-cols-1 ">
-                <li class="text-white   p-3 col-12 "> <i class="p-3   col bi bi-pie-chart-fill"></i>Overview
-                    </nav>
-                <li class=" hover p-3 text-secondary col"> <i class=" p-3 col bi bi-card-text"></i>Ticket</nav>
-                <li class="hover p-3 text-secondary col"><i class=" p-3 col bi bi-lightbulb-fill"></i>Ideas</nav>
-                <li class="hover p-3 text-secondary col"><i class=" p-3 col bi bi-people-fill"></i>Contacts</nav>
-                <li class="hover p-3 text-secondary col"><i class=" p-3 col bi bi-person-square"></i>Agents</nav>
-                <li class="hover p-3 text-secondary col"><i class=" p-3 col bi bi-journal-text"></i>Articles</nav>
+                <a class="text-decoration-none hover p-3 text-muted col"><i class=" p-3 col bi bi-gear-fill"></i>Setting</a>
+                <a class="text-decoration-none hover  p-3 text-muted col"><i class=" p-3 col bi bi-award-fill"></i>Subscription</a>
 
-            </ul>
-            <ul class="row row-cols-1 ">
-
-                <li class="hover p-3 text-muted col"><i class=" p-3 col bi bi-gear-fill"></i>Setting</nav>
-                <li class="hover  p-3 text-muted col"><i class=" p-3 col bi bi-award-fill"></i>Subscription</nav>
-
-            </ul>
+            </nav>
         </header>
-        <main class="p-3 col col-8 col-sm-8 col-md-8 col-lg-9">
-            <div class="row">
-                <p class="p-3 col  col-xs-2 col-sm-5 col-md-6 col-lg-7"><strong>Overview</strong></p>
-                <i class="p-3 col col-1 col-xs-2 col-sm-1 bi bi-search"></i>
-                <i class="p-3 col col-1 col-xs-2 col-sm-1 bi bi-bell-fill"></i>
-                <p class="p-3 col col-sm-3 col-xs-2 col-lg-2 ">Kiana Heidari</p>
-                <img src="../asset/Scree.jpg"
-                    class=" rounded-circle img-responsive main-img  col-xs-1 col-sm-2 col-md-1 col-1  two"
-                    src="" alt="" width="5" height="">
-            </div>
+        <!--main content , bg color light gray -->
+        <main class="p-3 col col-8  col-lg-9">
+            <div class=" row">
+                <!-- this row shows overview and the developer photoo -->
+                <h4 class=" col  col-xs-7 col-sm-5 col-md-7 col-lg-8"><strong>Overview</strong></h4>
+                <i class=" col col-1 col-xs-1 col-md-1 col-lg-1 bi bi-search"></i>
+                <i class=" col col-1 col-xs-1 col-md-1 col-lg-1 bi bi-bell-fill"></i>
+                <p class=" col col-sm-2 col-xs-2 col-lg-1 ">Kiana Heidari</p>
+                <!--img responsive and round -->
+                <div class=" col col-xs-2 col-s-1 col-md-1"><img src="../asset/Scree.jpg"
+                    class=" rounded-circle img-md-thumbnail img-responsive main-img two" 
+                    alt="Developer photo" width="40" height="">
+                </div>
+                </div>
+                <br>
+            <!--numbers are bolder  -->
+            <!--the second column is yellow and focused  -->
             <div class=" text-center row row-cols-sm-2 row-cols-md-4 justify-content-around ">
-                <p class="rounded  p-3  col-sm-5  col-md-3 col-lg-2  text-muted bg-white border   ">Unresolved <br> <strong
-                        class="text-dark">69</strong></p>
-                <p class="p-3 rounded  col-sm-5 col-md-3  col-lg-2  text-warning bg-white border border-warning">Overdue<br><strong
-                        class="purple">16</strong></p>
-                <p class="p-3  rounded col-sm-5 col-md-3 col-lg-2 text-muted border-muted bg-white border">Open<br><strong class=" purple text-dark">43</strong></p>
-                <p class="p-3  rounded col-sm-5 col-md-3 col-lg-2 text-muted border-muted bg-white border">On hold<br><strong class="text-dark">64</strong></p>
+                <p class="rounded  p-3  col-sm-5  col-md-3 col-lg-2  text-muted bg-white border   ">Unresolved <br>
+                    <strong class="text-dark">69</strong>
+                </p>
+                <p class="p-3 rounded  col-sm-5 col-md-3  col-lg-2  text-warning bg-white border border-warning">
+                    Overdue<br><strong class="purple">16</strong></p>
+                <p class="p-3  rounded col-sm-5 col-md-3 col-lg-2 text-muted border-muted bg-white border">
+                    Open<br><strong class=" purple text-dark">43</strong></p>
+                <p class="p-3  rounded col-sm-5 col-md-3 col-lg-2 text-muted border-muted bg-white border">On
+                    hold<br><strong class="text-dark">64</strong></p>
             </div>
 
-
-
-            <div class="m-3 row ggg row-cols-1 row-cols-lg-2 justify-content-center border rounded border-primary bg-white">
+            <!--chart and results here in same line in bigger screen , in small results under chart with two rows in every line -->
+            <!--numbers are bolder  -->
+            <div class="m-3 row ggg row-cols-1 row-cols-lg-2 justify-content-center border rounded border-primary border-2 bg-white">
                 <div class="col col-md-9 col-lg-8 border  border-rounded-left">
-                    <ul class="row  align-items-end">
+                    <section class="row  align-items-end">
 
                         <p class="col-4">today's trend </p>
-                    </ul>
-                    <ul class="row  ">
+                    </section>
+                    <section class="row  ">
                         <p class="purple col-5 col-lg-5 col-md-5 text-muted">
                             os of 25 May 2019, 09:41 PM</p>
                         <p class="text-muted col-3 col-lg-3"><i class=" col bi bi-dash text-primary"></i> Today</p>
                         <p class="text-muted col-4 col-lg-4"><i class=" col bi bi-dash"></i> Yesterday</p>
-                    </ul>
+                    </section>
+                    <!--chart img here  -->
                     <p class=" m-3 p-img row">
                         <img src="../asset/chart.jpg"
-                            class=" justify-content-center main-img  col-12 col-md-12 col-lg-12   two" src="" alt=""
-                            width="" height="200">
+                            class=" justify-content-center main-img  col-12 col-md-12 col-lg-12   two" src=""
+                            alt="chart photo" width="" height="200">
                     </p>
-                    </ul>
-
+                </section>
                 </div>
                 <div class="text-center border  col-12 col-md-3 col-lg-4 ">
-
+                    <!--numbers are bolder and content are muted -->
                     <div class="p-2 row row-cols-xs-2 row-cols-md-1 row-cols-lg-1  ">
                         <p class="sm-border text-muted col-6 col-lg-12 border-rounded-left border-bottom">Resolved <br>
-                            <strong class="text-dark">449</strong></p>
+                            <strong class="text-dark">449</strong>
+                        </p>
                         <p class="text-muted col-6 col-lg-12 border-bottom">Recieved<br><strong
                                 class="text-dark">426</strong></p>
                         <p class="text-muted col-6 col-lg-12 border-bottom ">Average first response time<br><strong
@@ -98,11 +110,12 @@
                         <p class="text-muted col-6 col-lg-12 border-bottom ">Average response time<br><strong
                                 class="text-dark">3h 8m</strong></p>
                         <p class="text-muted col-6 col-lg-12  border-right sm-border">Resolution within
-                            <br><strong class="text-dark">94%</strong></p>
+                            <br><strong class="text-dark">94%</strong>
+                        </p>
                     </div>
                 </div>
             </div>
-
+            <!--ticket and task column here, on desktop in same line and in smaller view one in each line  -->
             <div class=" row row-cols-1 row-cols-lg-2  justify-content-center ">
                 <div class=" col-10 col-lg-6 ">
                     <ul class="p-3  m-1 row row-cols-2  border rounded bg-white">
@@ -156,59 +169,53 @@
                 </div>
             </div>
             <br>
+            <!--contact form here  -->
+            <!--plus button  -->
             <div class=" form primary-color container">
                 <h6 class="p-2">Contact us</h6>
 
-                <form class=" m-60px p-md-60px container form-inline" action="/action_page.php">
-                    <div class=" form-group">
+                <form class=" m-60px p-md-60px col form-inline" action="/action_page.php">
+                    <div class=" col-lg-6 form-group">
+                        <!--lable for email  -->
                         <label for="email">Email:</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                     </div>
-                    <div class="form-group">
+                    <!--lable for password  -->
+                    <div class="col-lg-6 form-group">
                         <label for="pwd">Password:</label>
                         <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
                     </div>
+                    <!--remember me checkbox  -->
                     <div class="checkbox">
                         <label><input type="checkbox" name="remember"> Remember me</label>
                     </div>
+                    <!--submit button blue  -->
                     <button type="submit" class="btn btn-info">Submit</button>
                 </form>
                 <br>
-                <br>
-
+                
+                <!--footer with instagram facebook and twitter icons  -->
                 <footer class="container ">
                     <div class="row row-cols-1 justify-content-center ">
-                        <div class=" col-3 ">
-                            <ul class="  row row-cols-3  ">
+                        <div class="col-3  col-m-2 ">
+                            <section class="  row row-cols-3  ">
 
-                                <i class=" col bi bi-instagram text-primary"></i>
-                                    <i class=" col bi bi-facebook text-primary"></i>
-                                       <i class=" col bi bi-twitter text-primary"></i>
-
-                            </ul>
+                                <i class=" col bi bi-instagram text-dark"></i>
+                                <i class=" col bi bi-facebook text-dark"></i>
+                                <i class=" col bi bi-twitter text-dark"></i>
+                            </section>
                         </div>
-                        
-
-                                
-
-                            
-                        
                     </div>
-
-                    </div>
+            </div>
                 </footer>
-                <br>
-                
-
+            
         </main>
-
-
-
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"></script>
-            <script src=""></script>
+        <!-- Java link here -->
+        <script src="main.js"></script>
 </body>
 
 </html>

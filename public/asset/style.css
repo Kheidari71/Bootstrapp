@@ -1,20 +1,31 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-:root{
-    --bs-body-font-family: 'Urbanist', sans-serif;
-}
+/* make second column content in overview purple on hover*/
 
 .border-warning  :hover{
     color: blueviolet;
 }
-
+/* change the nav list style to none*/
 li{
     list-style: none;
 }
+/* make non-muted contant in borders purple on hover*/
 .border  :hover{
     color: rgb(211, 15, 236);
 }
-li :hover{
+/* make nav list icon white on hover*/
+nav :hover{
     color: white;
+}
+input{
+    width: 40px;
+}
+.form-control{
+    height: 40px;
+    width: 10px;
+}
+label{
+    height: 40px;
+    width: 10px;
+}
+a{
+    text-decoration: none;
 }
