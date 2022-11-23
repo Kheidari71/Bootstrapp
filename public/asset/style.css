@@ -1,0 +1,20 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+:root{
+    --bs-body-font-family: 'Urbanist', sans-serif;
+}
+
+.border-warning  :hover{
+    color: blueviolet;
+}
+
+li{
+    list-style: none;
+}
+.border  :hover{
+    color: rgb(211, 15, 236);
+}
+li :hover{
+    color: white;
+}
